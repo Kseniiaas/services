@@ -1,0 +1,633 @@
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('./Макет1/fonts/TTLakes/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Regular.eot') format('embedded-opentype'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('./Макет1/fonts/TTLakes/TTLakes-Bold.eot');
+    src:local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Bold.eot') format('embedded-opentype'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('./Макет1/fonts/TTLakes/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Medium.eot') format('embedded-opentype'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+        url('./Макет1/fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    color: #1B1C21;
+}
+
+main {
+    background-color: #F8F8F8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    width: 320px;
+    height: 88px;
+    flex-shrink: 0;
+    background-color: #FFFFFF;    
+}
+
+.header__burger-button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+    margin-right: 16.73px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.header__logo {
+    width: 96.548px;
+    height: 50.815px;
+    flex-shrink: 0;
+    margin-top: 18.59px;
+    margin-bottom: 18.59px;
+    margin-left: 0;
+    margin-right: 16.73px;
+    padding: 0;
+}
+
+.header__divider-two {
+    width: 2px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 1px;
+    background: #EAEAEA;
+    padding: 0;
+    margin-top: 28px;
+    margin-left: 0;
+    margin-bottom: 28px;
+    margin-right: 20px;
+}
+
+.header__call-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 0;
+} 
+
+.header__chat-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.header__profile-button{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: none;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.header__repair-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    padding: 0;
+    margin-top: 24px;
+    margin-left: 0;
+    margin-bottom: 24px;
+    margin-right: 16px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.header__checkstatus-button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    padding: 0;
+    margin-top: 24px;
+    margin-left: 0;
+    margin-right: 16px;
+    margin-bottom: 24px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+
+.title__highlight{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.title__highlight-title {
+    color: #1B1C21;
+    font-family: "TT Lakes Bold";
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin-left: 12px;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.title__highlight-img {
+    margin-top: 24px;
+}
+
+
+.navigation { 
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.navigation__list-link {
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #7E7E82;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    margin: 0;
+}
+
+.navigation__list-link:hover {
+    border: 2px solid #B8FFEC;
+    background: #FFF;
+    border-radius: 6px;
+    width: 246px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2%;
+} 
+
+
+.conteiner__more-text {
+    width: 288px;
+    color: #1B1C21;
+    font-family: "TT Lakes Regular";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 19px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin: 0;
+}
+
+.conteiner__more-more {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 0;
+    margin-bottom: 8px;
+}
+
+.conteiner__more-more-reveal {
+    color: #1B1C21;
+    font-family: "TT Lakes Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    margin-left: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+.conteiner__more-more-expand {
+    width: 24px;
+    height: 24px;
+}
+
+.conteiner__image {
+    margin-bottom:0;
+}
+
+
+
+@media (min-width: 768px) {
+    .main {
+        height: 416px;
+    }
+
+    .header__inner {
+        width: 768px;
+        padding: 0;
+    }
+
+    .header__burger-button {
+        margin-left: 24px;
+        margin-right: 0;
+    }
+
+    .header__divider {
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        margin-left: 20px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .header__logo {
+        flex-shrink: 0;
+        margin-top: 18.59px;
+        margin-bottom: 18.59px;
+        margin-left: 20.73px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .header__call-button {
+        margin-left: 250.73px;
+        margin-right: 0;
+    } 
+
+    .header__chat-button {
+        margin-left: 16px;
+    }
+
+    .header__profile-button{
+        margin-left: 20px;
+    }
+
+    .header__divider-two {
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+        background: #EAEAEA;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 20px;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .header__repair-button {
+        margin-left: 16px;
+        margin-right: 0;
+    }
+
+    .header__checkstatus-button {
+        margin-left: 16px;
+        margin-right: 24px;
+    }
+    
+    .title__highlight{
+        margin-bottom: 0;
+    }
+
+    .navigation__list-link-repair {
+        margin-left: 40.67px;
+        
+    }
+
+    .navigation__list-link:hover {
+        margin-right:0;
+        margin-top: 32px;
+        margin-bottom: 0;
+        margin-left: 24px;
+        padding: 0;
+    }
+
+    .navigation__list-link {
+        margin-top: 40px;
+        margin-left: 40.67px;
+    }
+
+    .conteiner__more-text {
+        margin-top: 32px;
+    }
+
+    .navigation__list-link-add-services{
+        margin-left: 25.38px;
+        margin-right: 24.83px;
+    }
+
+    .navigation__list-link-price {
+        margin-left: 24.83px;
+        margin-right: 25.13px;
+    }
+
+    .navigation__list-link-special-price {
+        margin-left: 25.13px;
+    }
+   
+    .mobile--text, 
+    .mobile--software {
+        width: 312px;
+        line-height: 20px;
+    }
+
+    .navigation__list-link-price { 
+        margin-right: 25.13px;
+    }
+
+    .navigation__list-link-special-price {
+        margin-right: 25.13px;
+    }
+
+    .conteiner {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .conteiner__image {
+        width: 360px;
+        height: 259.655px;
+        margin-top: 14px;
+        margin-left: 48px;
+        padding-top: 10px;
+    }
+
+    .conteiner__more {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 320px) {
+
+    .navigation__list-link:hover {
+        margin-right: 43.56px;
+        margin-top: 29px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .navigation__list-link {
+        margin-top: 37px;
+    }
+
+    .navigation__list-link-repair {
+        margin-right: 52.87px;
+    }
+
+    .conteiner__more-text {
+        margin-top: 20px;
+    }
+ }
+
+@media(max-width: 320px) {
+    .title__highlight-application,
+    .title__highlight-status,
+    .title__highlight-repair-button-two,
+    .title__highlight-checkstatus-button-two,
+    .navigation__list-link-brand {
+        display: none;
+    }
+
+    .navigation__list-link {
+        margin-left: 0;
+    }
+} 
+
+@media(min-width: 1120px) {
+    .header__inner {
+        display: none;
+    }
+
+    .main {
+        width: 1120px;
+        height: 535px;
+    }
+
+    .navigation__list {
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+
+    .title__highlight-title {
+        margin-top: 42px;
+    }
+
+    .title__highlight-img {
+        margin-top: 42px;
+    }
+
+    .navigation__list-link-brand {
+        margin-top: 8.63px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 54.64px;
+    }
+
+    .navigation__list-link-repair {
+        margin-right: 0;
+        margin-left: 40.7px;
+    }
+
+    .navigation__list-link-add-services {
+        display: none;
+    }
+    
+    .navigation__list-link-price {
+        margin-left: 34.15px;
+    }
+
+    .navigation__list-link-address {
+        margin-left: 2px;
+        padding: 0;
+    }
+
+    .navigation__list-link-special-price {
+        margin-left: 21px;
+    }
+
+    .navigation__list-link-reviews {
+        margin-left: 56px;
+    }
+
+    .conteiner {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .conteiner__more-more {
+        margin-top: 0;
+        margin-left: 32px;
+    }
+
+    .conteiner__more-text {
+        width: 490px;
+        line-height: 20px;
+        margin-top: 19.22px;
+        margin-left: 34px;
+     }
+
+    .conteiner__image {
+        display: none;
+     }
+
+    .conteiner__image-1120 {
+        width: 531.346px;
+        height: 383.241px;
+        margin-right: 28.65px;
+     }
+
+    .navigation__list-link:hover {
+        margin-right:0;
+        margin-top: 8.37px;
+        margin-bottom: 0;
+        margin-left: 32px;
+        padding: 0;
+    }
+
+    .navigation__list-link {
+        margin-top: 17px;
+    }
+
+    .title__highlight-application {
+        width: 125px;
+        color: #1B1C21;
+        text-align: right;
+        font-family: "TT Lakes Medium";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin-left: 450px;
+        margin-top: 50px;
+    }
+
+    .title__highlight-repair-button-two {
+        width: 40px;
+        height: 40px;
+        margin-top: 42px;
+        margin-left: 8px;
+        border: 0;
+        padding: 0;
+        background-color:#F8F8F8;
+    }
+
+    .title__highlight-status{
+        width: 119px;
+        color: #1B1C21;
+        font-family: "TT Lakes Medium";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        margin-top: 50px;
+        margin-left: 32px;
+    }
+
+    .title__highlight-checkstatus-button-two {
+        width: 40px;
+        height: 40px;
+        border: 0;
+        padding: 0;
+        background-color:#F8F8F8;
+        margin-left: 9px;
+        margin-top: 42px;
+    }
+}
+
+@media(max-width: 767px) {
+    .header__call-button,
+    .header__chat-button,
+    .header__profile-button,
+    .navigation__list-link-brand,
+    .mobile--software,
+    .mobile--software-1120 {
+        display: none;
+    }
+
+    .conteiner__more-text {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 1119px) {
+    .title__highlight-application,
+    .title__highlight-status,
+    .title__highlight-repair-button-two,
+    .title__highlight-checkstatus-button-two,
+    .mobile--software-1120,
+    .navigation__list-link-brand,
+    .conteiner__image-1120 {
+        display: none;
+    }
+}
+
