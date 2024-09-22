@@ -61,13 +61,12 @@ img {
 
 a {
     text-decoration: none;
-    padding: 0;
 }
 
 
 .header__inner {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     padding: 0;
     width: 320px;
@@ -193,7 +192,6 @@ a {
     margin-top: 24px;
 }
 
-
 .navigation { 
     margin: 0;
     padding: 0;
@@ -215,22 +213,26 @@ a {
     color: #7E7E82;
     font-family: "TT Lakes Medium";
     font-size: 16px;
-    line-height: 24px; 
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
-    margin: 0;
+    text-align: center;
 }
 
 .navigation__list-link:hover {
-    border: 2px solid #B8FFEC;
-    background: #FFF;
+    display: flex;
+    justify-content:space-around;
     border-radius: 6px;
-    width: 246px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    margin-left: -2%;
-} 
+    border: 2px solid #B8FFEC;
+    background-color: #FFFFFF;
+}
 
+.navigation__list-link:focus {
+    border-radius: 6px;
+    border: 2px solid #B8FFEC;
+    background-color: #FFFFFF;
+}
 
 .conteiner__more-text {
     width: 288px;
@@ -279,8 +281,8 @@ p {
 }
 
 
-
 @media (min-width: 768px) {
+
     .main {
         height: 416px;
     }
@@ -355,54 +357,26 @@ p {
         margin-bottom: 0;
     }
 
-    .navigation__list-link-repair {
-        margin-left: 40.67px;
-        
-    }
-
-    .navigation__list-link:hover {
-        margin-right:0;
-        margin-top: 32px;
-        margin-bottom: 0;
-        margin-left: 24px;
-        padding: 0;
-    }
-
     .navigation__list-link {
         margin-top: 40px;
-        margin-left: 40.67px;
+        margin-bottom: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16.67px;  
+        padding-right: 9.38px; 
+    }
+    .navigation__list-link-repair {
+        margin-left: 24.67px;
     }
 
     .conteiner__more-text {
         margin-top: 32px;
-    }
-
-    .navigation__list-link-add-services{
-        margin-left: 25.38px;
-        margin-right: 24.83px;
-    }
-
-    .navigation__list-link-price {
-        margin-left: 24.83px;
-        margin-right: 25.13px;
-    }
-
-    .navigation__list-link-special-price {
-        margin-left: 25.13px;
     }
    
     .mobile--text, 
     .mobile--software {
         width: 312px;
         line-height: 20px;
-    }
-
-    .navigation__list-link-price { 
-        margin-right: 25.13px;
-    }
-
-    .navigation__list-link-special-price {
-        margin-right: 25.13px;
     }
 
     .conteiner {
@@ -425,22 +399,6 @@ p {
 }
 
 @media(min-width: 320px) {
-
-    .navigation__list-link:hover {
-        margin-right: 43.56px;
-        margin-top: 29px;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    .navigation__list-link {
-        margin-top: 37px;
-    }
-
-    .navigation__list-link-repair {
-        margin-right: 52.87px;
-    }
-
     .conteiner__more-text {
         margin-top: 20px;
     }
@@ -456,8 +414,17 @@ p {
     }
 
     .navigation__list-link {
-        margin-left: 0;
+        margin-top: 37px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 9.3px;
+        padding-left: 16.54px;
+    } 
+
+    .navigation__list-link-repair {
+        margin-left: -8.54px;
     }
+
 } 
 
 @media(min-width: 1120px) {
@@ -470,11 +437,6 @@ p {
         height: 535px;
     }
 
-    .navigation__list {
-        overflow-x: hidden;
-        flex-wrap: wrap;
-    }
-
     .title__highlight-title {
         margin-top: 42px;
     }
@@ -483,37 +445,27 @@ p {
         margin-top: 42px;
     }
 
+    .navigation__list {
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+
+    .navigation__list-link {
+        margin-top: 8.37px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 8.63px;
+        padding-bottom: 7.37px;
+        padding-right: 21.7px;
+        padding-left: 22.64px;
+    }
+
     .navigation__list-link-brand {
-        margin-top: 8.63px;
-        margin-bottom: 0;
-        margin-right: 0;
-        margin-left: 54.64px;
-    }
-
-    .navigation__list-link-repair {
-        margin-right: 0;
-        margin-left: 40.7px;
-    }
-
-    .navigation__list-link-add-services {
-        display: none;
+        margin-left: 32.64px;
     }
     
-    .navigation__list-link-price {
-        margin-left: 34.15px;
-    }
-
-    .navigation__list-link-address {
-        margin-left: 2px;
-        padding: 0;
-    }
-
-    .navigation__list-link-special-price {
-        margin-left: 21px;
-    }
-
-    .navigation__list-link-reviews {
-        margin-left: 56px;
+    .navigation__list-link-add-services {
+        display: none;
     }
 
     .conteiner {
@@ -542,24 +494,8 @@ p {
         width: 531.346px;
         height: 383.241px;
         margin-right: 28.65px;
+        border: -38%;
      }
-
-    .navigation__list-link:hover {
-        margin-right:0;
-        margin-top: 8.37px;
-        margin-bottom: 0;
-        margin-left: 32px;
-        padding: 0;
-    }
-
-    .navigation__list-link:focus {
-        outline: 2px solid #B8FFEC;
-        outline-offset: 2px;
-    }
-
-    .navigation__list-link {
-        margin-top: 17px;
-    }
 
     .title__highlight-application {
         width: 125px;
@@ -608,8 +544,11 @@ p {
         margin-top: 42px;
     }
 }
-
 @media(max-width: 767px) {
+    .header__inner {
+        max-width:768px;
+        margin: 0 auto;
+    }
     .header__call-button,
     .header__chat-button,
     .header__profile-button,
@@ -621,6 +560,15 @@ p {
 
     .conteiner__more-text {
         margin-top: 20px;
+    }
+
+    .navigation__list-link {
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16.67px;  
+        padding-right: 9.38px; 
     }
 }
 
