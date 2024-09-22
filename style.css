@@ -552,6 +552,11 @@ p {
         padding: 0;
     }
 
+    .navigation__list-link:focus {
+        outline: 2px solid #B8FFEC;
+        outline-offset: 2px;
+    }
+
     .navigation__list-link {
         margin-top: 17px;
     }
@@ -630,4 +635,5 @@ p {
         display: none;
     }
 }
+
 
