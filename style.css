@@ -66,13 +66,14 @@ a {
 
 .header__inner {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    width: 320px;
+    width: 1120px;
     height: 88px;
     flex-shrink: 0;
-    background-color: #FFFFFF;    
+    background-color: #FFFFFF;
+    justify-content:space-around ;
+    margin: 0;
+    padding: 0;
+    width:100%;
 }
 
 .header__burger-button {
@@ -251,10 +252,6 @@ a {
     margin-bottom: 16px;
 }
 
-p {
-    margin: 0;
-}
-
 .conteiner__more-more {
     display: flex;
     margin-left: 16px;
@@ -278,6 +275,7 @@ p {
 .conteiner__more-more-expand {
     width: 24px;
     height: 24px;
+    
 }
 
 .conteiner__image {
@@ -286,7 +284,6 @@ p {
 
 
 @media (min-width: 768px) {
-
     .main {
         height: 416px;
     }
@@ -385,7 +382,7 @@ p {
 
     .conteiner {
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
     }
 
     .conteiner__image {
@@ -394,6 +391,7 @@ p {
         margin-top: 14px;
         margin-left: 48px;
         padding-top: 10px;
+
     }
 
     .conteiner__more {
@@ -407,8 +405,30 @@ p {
     .conteiner__more-text {
         margin-top: 20px;
     }
+
+    .conteiner__image {
+        width: 100%;
+    }
  }
 
+ @media (min-width:450px) {
+    .conteiner {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .conteiner__image {
+        width: 100%;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .conteiner__more-text {
+        width: 100%;
+        margin:  0;
+    }
+ }
 @media(max-width: 320px) {
     .title__highlight-application,
     .title__highlight-status,
@@ -430,6 +450,9 @@ p {
         margin-left: -8.54px;
     }
 
+    .conteiner__image {
+        width: 100%;
+    }
 } 
 
 @media(min-width: 1120px) {
@@ -559,8 +582,11 @@ p {
 }
 @media(max-width: 767px) {
     .header__inner {
-        max-width:768px;
-        margin: 0 auto;
+        display: flex;
+        justify-content:space-around ;
+        margin: 0;
+        padding: 0;
+        width:100%;
     }
     .header__call-button,
     .header__chat-button,
@@ -583,6 +609,8 @@ p {
         padding-left: 16.67px;  
         padding-right: 9.38px; 
     }
+
+
 }
 
 @media(max-width: 1119px) {
@@ -594,5 +622,13 @@ p {
     .navigation__list-link-brand,
     .conteiner__image-1120 {
         display: none;
+    }
+    
+    .header__inner {
+        display: flex;
+        justify-content:space-around ;
+        margin: 0;
+        padding: 0;
+        width:100%;
     }
 }
