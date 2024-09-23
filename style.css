@@ -219,6 +219,9 @@ a {
     line-height: 24px; /* 150% */
     letter-spacing: -0.2px;
     text-align: center;
+    border: 2px solid #F8F8F8;
+    background-color: #F8F8F8;
+    margin: 0;
 }
 
 .navigation__list-link:hover {
@@ -468,10 +471,14 @@ p {
     }
 
     .navigation__list-link-brand {
-        margin-left: 32.64px;
+        margin-left: 25.64px;
     }
     .navigation__list-link-add-services {
         display: none;
+    }
+
+    .navigation__list-link-reviews {
+        margin-left: 25px;
     }
 
     .conteiner {
@@ -589,5 +596,3 @@ p {
         display: none;
     }
 }
-
-
