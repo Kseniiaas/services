@@ -192,6 +192,7 @@ a {
     margin-top: 24px;
 }
 
+
 .navigation { 
     margin: 0;
     padding: 0;
@@ -399,6 +400,7 @@ p {
 }
 
 @media(min-width: 320px) {
+
     .conteiner__more-text {
         margin-top: 20px;
     }
@@ -457,13 +459,17 @@ p {
         padding-top: 8.63px;
         padding-bottom: 7.37px;
         padding-right: 21.7px;
-        padding-left: 22.64px;
+        padding-left: 20.64px;
+    }
+
+    .navigation__list-link:hover {
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
     .navigation__list-link-brand {
         margin-left: 32.64px;
     }
-    
     .navigation__list-link-add-services {
         display: none;
     }
